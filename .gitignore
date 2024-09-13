@@ -1,0 +1,56 @@
+# Ignore Maven build output
+target/
+# Exclude build outputs from the Maven wrapper but keep the wrapper itself
+!.mvn/wrapper/maven-wrapper.jar
+# Include target directories within source directories
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Ignore generated files by Spring Tool Suite (STS)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Ignore NetBeans project files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+# Include build output directories within source directories
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Ignore VS Code project files
+.vscode/
+
+# Additional general exclusions
+*.log                # Logs
+*.tmp                # Temporary files
+*.swp                # Swap files
+*.class              # Compiled Java classes
+*.jar                # Packaged JAR files
+*.war                # Packaged WAR files
+*.ear                # Packaged EAR files
+node_modules/        # Node.js modules (if applicable)
+.env                 # Environment configuration files
+
+# Coverage and test results
+/coverage/
+.test-output/
+surefire-reports/
+
+# OS-specific files
+.DS_Store            # macOS Finder metadata
+Thumbs.db            # Windows thumbnail cache
