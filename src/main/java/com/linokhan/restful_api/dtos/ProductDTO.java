@@ -18,7 +18,7 @@ public class ProductDTO {
     /**
      * The unique identifier of the product.
      */
-    private Long id;
+     private Long id;
 
     /**
      * The name of the product.
@@ -34,4 +34,10 @@ public class ProductDTO {
      * The price of the product.
      */
     private double price;
+
+    public ProductDTO(String name, String description, double price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
 }

@@ -44,4 +44,10 @@ public class Product {
      * Mapped to the 'price' column in the 'product' table.
      */
     private double price;
+
+    public Product(String name, String description, double price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
 }

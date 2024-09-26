@@ -82,8 +82,10 @@ public class ProductController {
      */
     @PutMapping("/{id}")
     public ResponseEntity<ProductDTO> updateProduct(@PathVariable Long id, @RequestBody ProductDTO productDTO) {
+        logger.info("Updating product with id: {}", id);
+        logger.info("Updated product data: {}", productDTO);  // Add log for DTO
+
         try {
-            logger.info("Updating product with id: {}", id);
             return ResponseEntity.ok(productService.updateProduct(id, productDTO));
         } catch (EntityNotFoundException e) {
             logger.warn("Product not found: {}", id);
@@ -93,6 +95,7 @@ public class ProductController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
+
 
     /**
      * Deletes a product by its ID.

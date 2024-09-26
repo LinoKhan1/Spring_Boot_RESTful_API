@@ -27,7 +27,7 @@ public interface ProductService {
     /**
      * Adds a new product to the system.
      *
-     * @param productDTO the data of the product to add.
+     * @param product the data of the product to add.
      * @return a {@link ProductDTO} representing the added product.
      */
     ProductDTO addProduct(ProductDTO product);
